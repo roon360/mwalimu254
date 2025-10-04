@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expert Math Tutoring Online - Transform Your Mathematics Grade</title>
+    <meta name="description" content="Professional online mathematics tutoring for Paper 1. Get expert help at KShs 800/hour. Book your session today and boost your grades!">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #667eea;
+        }
+
+        .cta-button {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 25px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: inline-block;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 120px 0 80px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .hero .subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .hero .price-highlight {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px 40px;
+            border-radius: 15px;
+            display: inline-block;
+            margin: 2rem 0;
+            backdrop-filter: blur(10px);
+        }
+
+        .hero .price-highlight .price {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .hero .price-highlight .per-hour {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .hero-buttons {
+            margin-top: 2rem;
+        }
+
+        .hero-buttons .cta-button {
+            margin: 0 10px;
+            padding: 15px 30px;
+            font-size: 1.1rem;
+        }
+
+        .btn-secondary {
+            background: transparent;
+            border: 2px solid white;
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background: white;
+            color: #667eea;
+        }
+
+        /* Features Section */
+        .features {
+            background: white;
+            padding: 80px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #333;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .feature-card {
+            background: #f8f9ff;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            border: 1px solid #e8ecff;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.1);
+        }
+
+        .feature-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            font-size: 2rem;
+            color: white;
+        }
+
+        .feature-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            background: #f8f9ff;
+            padding: 80px 0;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .testimonial {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .testimonial .stars {
+            color: #ffd700;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .testimonial .quote {
+            font-style: italic;
+            margin-bottom: 1rem;
+            color: #666;
+        }
+
+        .testimonial .author {
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        /* Pricing Section */
+        .pricing {
+            background: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .pricing-card {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 3rem 2rem;
+            border-radius: 20px;
+            max-width: 400px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pricing-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: rgba(255, 255, 255, 0.1);
+            transform: rotate(45deg);
+            animation: shine 3s infinite;
+        }
+
+        @keyframes shine {
+            0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+            100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+        }
+
+        .pricing-card .price {
+            font-size: 3rem;
+            font-weight: bold;
+            margin: 1rem 0;
+        }
+
+        .pricing-features {
+            list-style: none;
+            margin: 2rem 0;
+        }
+
+        .pricing-features li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .pricing-features li:last-child {
+            border-bottom: none;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        /* Contact Form */
+        .contact-form {
+            background: white;
+            padding: 80px 0;
+        }
+
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #f8f9ff;
+            padding: 3rem;
+            border-radius: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e8ecff;
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .form-group textarea {
+            height: 120px;
+            resize: vertical;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero .subtitle {
+                font-size: 1.1rem;
+            }
+
+            .hero .price-highlight .price {
+                font-size: 2rem;
+            }
+
+            .features-grid,
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-buttons .cta-button {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+
+        /* Animation classes */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <div class="logo">MathMaster Pro</div>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#contact" class="cta-button">Book Now</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Transform Your Mathematics Grade</h1>
+            <p class="subtitle">Expert online tutoring for Mathematics Paper 1 - Personalized, Professional, Proven Results</p>
+            
+            <div class="price-highlight">
+                <div class="price">KShs 800</div>
+                <div class="per-hour">per hour</div>
+            </div>
+
+            <div class="hero-buttons">
+                <a href="#contact" class="cta-button">Book Your Session</a>
+                <a href="#features" class="cta-button btn-secondary">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">Why Choose Our Math Tutoring?</h2>
+            <div class="features-grid">
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">📚</div>
+                    <h3>Expert Knowledge</h3>
+                    <p>Qualified mathematics teacher with years of experience in Paper 1 curriculum and examination techniques.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">💻</div>
+                    <h3>Online Convenience</h3>
+                    <p>Learn from the comfort of your home with interactive online sessions using the latest digital tools.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Personalized Approach</h3>
+                    <p>One-on-one sessions tailored to your learning style and specific areas that need improvement.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">📈</div>
+                    <h3>Proven Results</h3>
+                    <p>Students consistently improve their grades and confidence in mathematics with our proven methods.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">⏰</div>
+                    <h3>Flexible Scheduling</h3>
+                    <p>Book sessions that fit your schedule - available weekdays and weekends to accommodate your needs.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">🏆</div>
+                    <h3>Exam Preparation</h3>
+                    <p>Specialized focus on Mathematics Paper 1 with practice questions, past papers, and exam strategies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Students Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial fade-in">
+                    <div class="stars">★★★★★</div>
+                    <p class="quote">"The tutor made mathematics so much clearer for me. My grade improved from a D to a B+ in just 3 months!"</p>
+                    <p class="author">- Sarah M., Form 4 Student</p>
+                </div>
+                <div class="testimonial fade-in">
+                    <div class="stars">★★★★★</div>
+                    <p class="quote">"Online sessions were so convenient and effective. The personalized approach helped me understand concepts I struggled with for years."</p>
+                    <p class="author">- James K., Form 3 Student</p>
+                </div>
+                <div class="testimonial fade-in">
+                    <div class="stars">★★★★★</div>
+                    <p class="quote">"Professional, patient, and knowledgeable. The exam preparation strategies really helped me score well in my KCSE."</p>
+                    <p class="author">- Mary W., KCSE Graduate</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <h2 class="section-title">Simple, Transparent Pricing</h2>
+            <div class="pricing-card fade-in">
+                <h3>Mathematics Paper 1 Tutoring</h3>
+                <div class="price">KShs 800</div>
+                <p>per hour session</p>
+                <ul class="pricing-features">
+                    <li>✓ One-on-one online sessions</li>
+                    <li>✓ Expert mathematics teacher</li>
+                    <li>✓ Personalized lesson plans</li>
+                    <li>✓ Past paper practice</li>
+                    <li>✓ Flexible scheduling</li>
+                    <li>✓ Progress tracking</li>
+                    <li>✓ Exam strategies</li>
+                </ul>
+                <a href="#contact" class="cta-button">Book Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Improve Your Math Grade?</h2>
+            <p>Don't let mathematics hold you back. Book your first session today and start your journey to mathematical success!</p>
+            <a href="#contact" class="cta-button">Get Started Now</a>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-form" id="contact">
+        <div class="container">
+            <h2 class="section-title">Book Your Math Tutoring Session</h2>
+            <div class="form-container">
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="grade">Current Grade/Form *</label>
+                        <select id="grade" name="grade" required>
+                            <option value="">Select your grade</option>
+                            <option value="form1">Form 1</option>
+                            <option value="form2">Form 2</option>
+                            <option value="form3">Form 3</option>
+                            <option value="form4">Form 4</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="preferred-time">Preferred Session Time</label>
+                        <select id="preferred-time" name="preferred-time">
+                            <option value="">Select preferred time</option>
+                            <option value="morning">Morning (8AM - 12PM)</option>
+                            <option value="afternoon">Afternoon (12PM - 5PM)</option>
+                            <option value="evening">Evening (5PM - 8PM)</option>
+                            <option value="weekend">Weekend</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Tell us about your math challenges (optional)</label>
+                        <textarea id="message" name="message" placeholder="What specific topics or areas in mathematics do you need help with?"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="cta-button" style="width: 100%; font-size: 1.1rem; padding: 15px;">Book My Session Now</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 MathMaster Pro. All rights reserved.</p>
+            <p>Professional Mathematics Tutoring Online | KShs 800/hour</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Fade in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Form submission handling
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your interest! We will contact you within 24 hours to schedule your math tutoring session.');
+        });
+    </script>
+</body>
+</html>
